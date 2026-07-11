@@ -1,0 +1,7 @@
+export * from "@/components/demoPage/HeroSection"
+export * from "@/components/demoPage/VideoCard"
+export * from "@/components/demoPage/VideoLibrary"
+export * from "@/components/demoPage/RecordedDemo"
+export * from "@/components/demoPage/Transcript"
+export * from "@/components/demoPage/DemoAudioPlayer"
+export * from "@/components/demoPage/SuggestedPrompt"
