@@ -52,7 +52,7 @@ export const SeeItInAction = () => {
                                             key={text}
                                             className="text-xs lg:leading-7 text-[#9B4CDB]"
                                         >
-                                            &quot{text}&quot
+                                            &quot;{text}&quot;
                                         </p>
                                     ))}
                                 </div>
@@ -62,7 +62,7 @@ export const SeeItInAction = () => {
                 </div>
 
                 <Link
-                    href="/demo"
+                    href="/demo#recorded-demo"
                     className="rounded-full border mt-10 border-white/15 px-10 py-4 text-sm font-normal text-white/70 transition hover:border-border/80 hover:text-white"
                 >
                     See All 6 Demos

@@ -2,7 +2,7 @@ export const footerLinks = {
   product: [
     {
       label: "Features",
-      href: "/features",
+      href: "/#features",
     },
     {
       label: "Demos",
