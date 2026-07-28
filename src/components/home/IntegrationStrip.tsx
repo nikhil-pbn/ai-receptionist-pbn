@@ -2,7 +2,7 @@ import { integrations } from "@/constants/home";
 
 export const IntegrationStrip = () => {
   return (
-    <section className="border-y w-full border-white/10">
+    <section className="border-y w-full border-foreground/10">
       <div className="mx-auto flex max-w-7xl flex-col items-center px-6 py-7.5">
         <span className="text-center text-xs font-normal uppercase tracking-[1.1px] text-[#8B5CF6]">
           Works with the systems your practice already runs on
@@ -11,7 +11,7 @@ export const IntegrationStrip = () => {
           {integrations.map((item) => (
             <span
               key={item}
-              className="text-sm font-bold text-white/45 transition-colors duration-300 hover:text-white"
+              className="text-sm font-bold text-foreground/45 transition-colors duration-300 hover:text-foreground"
             >
               {item}
             </span>

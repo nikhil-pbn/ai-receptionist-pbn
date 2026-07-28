@@ -2,4 +2,8 @@ export * from "@/components/common/Footer";
 export * from "@/components/common/Header";
 export * from "@/components/common/PageHero";
 export * from "@/components/common/DemoButton";
+export * from "@/components/common/Logo";
+export * from "@/components/common/SmoothHashScroll";
 export * from "@/components/common/LastCTA";
+export * from "@/components/common/ThemeProvider";
+export * from "@/components/common/ThemeToggle";

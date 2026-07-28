@@ -12,11 +12,11 @@ export const VideoLibrary = () => {
                         Use Case Video Library
                     </p>
 
-                    <h2 className="mt-6 text-2xl font-extrabold text-white lg:text-4xl">
+                    <h2 className="mt-6 text-2xl font-extrabold text-foreground lg:text-4xl">
                         All 6 Real Scenarios
                     </h2>
 
-                    <p className="mx-auto mt-8 max-w-xl text-sm font-normal leading-6 text-white/55">
+                    <p className="mx-auto mt-8 max-w-xl text-sm font-normal leading-6 text-foreground/55">
                         Each card is recreated from a real AIR call. Voice persona
                         "Maya," fictional practice "Riverbend Family Dental,"
                         approximately 30–60 seconds each.
@@ -36,7 +36,7 @@ export const VideoLibrary = () => {
 
                 {/* Footer */}
 
-                <p className="mt-12 text-center text-sm text-white/40">
+                <p className="mt-12 text-center text-sm text-foreground/40">
                     Production spec for all six: voice persona "Maya,"
                     fictional practice "Riverbend Family Dental", 30–60
                     seconds spoken, pacing slowed on phone numbers, codes,

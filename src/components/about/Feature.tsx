@@ -32,21 +32,21 @@ export const Feature = ({
               {badge}
             </span>
 
-            <h2 className="max-w-xl text-3xl font-bold leading-tight text-white md:text-5xl">
+            <h2 className="max-w-xl text-3xl font-bold leading-tight text-foreground md:text-5xl">
               {heading}
             </h2>
 
-            <p className="mt-6 max-w-xl text-lg leading-8 text-white/60">
+            <p className="mt-6 max-w-xl text-lg leading-8 text-foreground/60">
               {description1}
             </p>
 
-            <p className="mt-5 max-w-xl text-lg leading-8 text-white/60">
+            <p className="mt-5 max-w-xl text-lg leading-8 text-foreground/60">
               {description2}
             </p>
           </div>
 
           {/* Right Image */}
-          <div className="overflow-hidden rounded-xl md:rounded-[30px] border border-white/10 bg-[#191E4A]/20">
+          <div className="overflow-hidden rounded-xl md:rounded-[30px] border border-foreground/10 bg-[#eef0ff]/20 dark:bg-[#191E4A]/20">
             <Image
               src={image}
               alt={imageAlt ?? heading}

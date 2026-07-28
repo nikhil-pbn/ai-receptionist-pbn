@@ -2,11 +2,10 @@
 
 import { navLinks } from "@/constants/header";
 import { MenuIcon, XIcon } from "@/icon";
-import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { DemoButton } from "@/components/common";
+import { DemoButton, Logo, ThemeToggle } from "@/components/common";
 
 
 export const Header = () => {
@@ -42,19 +41,14 @@ export const Header = () => {
         <header
             className={` fixed inset-x-0 top-0 h-16 z-50 transition-all duration-300
                 ${isScrolled
-                    ? "bg-[#161515]/50 shadow-lg backdrop-blur-xl"
+                    ? "bg-background/60 shadow-lg backdrop-blur-xl"
                     : "bg-transparent backdrop-blur-sm"
                 }
       `}
         >            <div className="mx-auto h-full flex max-w-7xl items-center justify-between px-6">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-3">
-                    <Image src="/assets/home/HeaderLogo.png"
-                    className="w-24 lg:w-40"
-                        width={150}
-                        height={44}
-                        alt="Logo" />
-
+                    <Logo imgClassName="w-24 lg:w-40" />
                 </Link>
 
                 {/* Desktop Navigation */}
@@ -76,16 +70,20 @@ export const Header = () => {
 
                 {/* Desktop Buttons */}
                 <div className="hidden items-center gap-4 md:flex">
+                    <ThemeToggle />
                     <DemoButton />
                 </div>
 
-                {/* Mobile Menu Button */}
-                <button
-                    onClick={() => setIsOpen(!isOpen)}
-                    className="md:hidden cursor-pointer border border-border rounded-md p-1.5 transition hover:bg-white/5"
-                >
-                    {isOpen ? <XIcon size={20} stroke="white" fill="white" /> : <MenuIcon size={20} stroke="white" fill="white" />}
-                </button>
+                {/* Mobile actions */}
+                <div className="flex items-center gap-2 md:hidden">
+                    <ThemeToggle />
+                    <button
+                        onClick={() => setIsOpen(!isOpen)}
+                        className="cursor-pointer border border-border rounded-md p-1.5 text-foreground transition hover:bg-foreground/5"
+                    >
+                        {isOpen ? <XIcon size={20} stroke="currentColor" fill="currentColor" /> : <MenuIcon size={20} stroke="currentColor" fill="currentColor" />}
+                    </button>
+                </div>
             </div>
 
             {/* Mobile Menu */}

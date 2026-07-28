@@ -7,8 +7,8 @@ export const TestimonialCard = ({
     company,
 }: TestimonialCardProps) => {
     return (
-        <article className="flex h-full flex-col rounded-3xl border border-white/10 bg-[#1C1A2C] p-4 sm:p-8">
-            <p className="flex-1 text-sm italic font-normal leading-9 text-white/75">
+        <article className="flex h-full flex-col rounded-3xl border border-foreground/10 bg-surface p-4 sm:p-8">
+            <p className="flex-1 text-sm italic font-normal leading-9 text-foreground/75">
                 &quot;{quote}&quot;
             </p>
 
@@ -18,8 +18,8 @@ export const TestimonialCard = ({
                 </div>
 
                 <div>
-                    <h4 className="text-xbasel font-bold text-white">{name}</h4>
-                    <p className="text-xs font-normal text-white/50">{company}</p>
+                    <h4 className="text-xbasel font-bold text-foreground">{name}</h4>
+                    <p className="text-xs font-normal text-foreground/50">{company}</p>
                 </div>
             </div>
         </article>

@@ -12,23 +12,23 @@ export const PricingPreview = () => {
                         Pricing
                     </p>
 
-                    <h2 className="mt-6 text-2xl font-extrabold text-white lg:text-4xl">
+                    <h2 className="mt-6 text-2xl font-extrabold text-foreground lg:text-4xl">
                         One plan. Every feature. Pay for only minutes you use.
                     </h2>
 
-                    <p className="mx-auto mt-8 max-w-xl text-sm font-normal leading-6 text-white/55">
+                    <p className="mx-auto mt-8 max-w-xl text-sm font-normal leading-6 text-foreground/55">
                         OnCall Receptionist includes the full feature set for every practice. Pricing scales with the AI minutes you need each month, starting free.
                     </p>
                 </div>
 
-                <div className="mt-20 overflow-hidden rounded-3xl border border-white/10">
+                <div className="mt-20 overflow-hidden rounded-3xl border border-foreground/10">
 
-                    <div className="flex items-center justify-between bg-[#242A68] px-3 py-3 sm:px-8 sm:py-7">
-                        <span className="text-xs text-nowrap sm:font-bold uppercase sm:tracking-[0.18em] text-white/50">
+                    <div className="flex items-center justify-between bg-[#e3e7ff] dark:bg-[#242A68] px-3 py-3 sm:px-8 sm:py-7">
+                        <span className="text-xs text-nowrap sm:font-bold uppercase sm:tracking-[0.18em] text-foreground/50">
                             AI Minutes / Month
                         </span>
 
-                        <span className="text-xs text-nowrap sm:font-bold uppercase sm:tracking-[0.18em] text-white/50">
+                        <span className="text-xs text-nowrap sm:font-bold uppercase sm:tracking-[0.18em] text-foreground/50">
                             Price / Month
                         </span>
                     </div>
@@ -41,7 +41,7 @@ export const PricingPreview = () => {
                 <div className="mt-12 flex justify-center">
                     <Link
                         href="/pricing"
-                        className="rounded-full border border-white/15 px-10 py-4 text-sm font-normal text-white/70 transition hover:border-border/80 hover:text-white"
+                        className="rounded-full border border-foreground/15 px-10 py-4 text-sm font-normal text-foreground/70 transition hover:border-border/80 hover:text-foreground"
                     >
                         See Full Pricing & Features
                     </Link>

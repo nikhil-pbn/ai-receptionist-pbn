@@ -19,11 +19,11 @@ export const RecordedDemo = () => {
                         Prefer to Listen First?
                     </p>
 
-                    <h2 className="mt-6 text-2xl font-extrabold text-white lg:text-4xl">
+                    <h2 className="mt-6 text-2xl font-extrabold text-foreground lg:text-4xl">
                         Recorded Demo
                     </h2>
 
-                    <p className="mx-auto mt-8 max-w-xl text-sm font-normal leading-6 text-white/55">
+                    <p className="mx-auto mt-8 max-w-xl text-sm font-normal leading-6 text-foreground/55">
                         Hear AIR handle a real new-patient booking call
                         from start to finish — same call, with the full
                         transcript below.
@@ -37,7 +37,7 @@ export const RecordedDemo = () => {
 
                     <button
                         onClick={() => setOpen(!open)}
-                        className="mt-5 flex w-full items-center justify-between rounded-2xl border border-white/10 bg-transparent px-6 py-4 font-semibold text-primary"
+                        className="mt-5 flex w-full items-center justify-between rounded-2xl border border-foreground/10 bg-transparent px-6 py-4 font-semibold text-primary"
                     >
                         {open ? "Hide Transcript" : "Show Transcript"}
 

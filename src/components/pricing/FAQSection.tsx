@@ -20,7 +20,7 @@ export const PricingFAQ = ({
                         {badge}
                     </span>
 
-                    <h2 className="mt-6 text-3xl font-extrabold text-white lg:text-4xl">
+                    <h2 className="mt-6 text-3xl font-extrabold text-foreground lg:text-4xl">
                         {title}
                     </h2>
                 </div>
@@ -34,7 +34,7 @@ export const PricingFAQ = ({
                             className="border-border border my-1 rounded-lg sm:rounded-[15px] px-3 py-2 sm:px-6.5 sm:py-4.5"
                         >
                             <AccordionTrigger className=" text-sm font-normal py-0">{item.question}</AccordionTrigger>
-                            <AccordionContent className="text-white/70">{item.answer}</AccordionContent>
+                            <AccordionContent className="text-foreground/70">{item.answer}</AccordionContent>
                         </AccordionItem>
                     ))}
                 </Accordion>

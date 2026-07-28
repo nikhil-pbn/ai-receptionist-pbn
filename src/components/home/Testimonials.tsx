@@ -10,7 +10,7 @@ export const Testimonials = () => {
             Success Stories
           </span>
 
-          <h2 className="mx-auto mt-6 max-w-5xl text-2xl font-extrabold leading-tight text-white lg:text-[33px]">
+          <h2 className="mx-auto mt-6 max-w-5xl text-2xl font-extrabold leading-tight text-foreground lg:text-[33px]">
             Trusted by practices already running on PbN
           </h2>
         </div>

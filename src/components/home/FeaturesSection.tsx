@@ -8,11 +8,11 @@ export const FeaturesSection = () => {
         <section id="features" className="px-6 py-20 w-full bg-sectionBg">
             <div className="mx-auto max-w-7xl">
                 <div className="mx-auto text-center">
-                    <p className="text-sm font-semibold uppercase tracking-[1.12px] text-[#84EBD1]">
+                    <p className="text-sm font-semibold uppercase tracking-[1.12px] text-[#0f9b84] dark:text-[#84EBD1]">
                         Features
                     </p>
 
-                    <h2 className="mt-6 text-3xl font-extrabold text-white lg:text-4xl">
+                    <h2 className="mt-6 text-3xl font-extrabold text-foreground lg:text-4xl">
                         Built for the way dental practices actually run
                     </h2>
                 </div>
@@ -36,11 +36,11 @@ export const FeaturesSection = () => {
                                     {feature.badge}
                                 </span>
 
-                                <h3 className="mt-7 text-lg font-black text-white lg:text-2xl">
+                                <h3 className="mt-7 text-lg font-black text-foreground lg:text-2xl">
                                     {feature.title}
                                 </h3>
 
-                                <p className="mt-6 text-sm font-normal leading-8 text-white/55">
+                                <p className="mt-6 text-sm font-normal leading-8 text-foreground/55">
                                     {feature.description}
                                 </p>
 
@@ -52,10 +52,10 @@ export const FeaturesSection = () => {
                                         >
                                             <TickIcon
                                                 size={14}
-                                                className="mt-1 shrink-0 text-primary"
+                                                className="mt-1 shrink-0 text-brand"
                                             />
 
-                                            <p className="text-sm font-normal text-white/75">
+                                            <p className="text-sm font-normal text-foreground/75">
                                                 {point}
                                             </p>
                                         </div>

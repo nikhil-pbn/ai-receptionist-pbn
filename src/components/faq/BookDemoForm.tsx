@@ -84,11 +84,11 @@ export const BookDemoForm = () => {
                         Get In Touch
                     </p>
 
-                    <h2 className="mt-6 text-2xl font-extrabold text-white lg:text-4xl">
+                    <h2 className="mt-6 text-2xl font-extrabold text-foreground lg:text-4xl">
                         Book a demo
                     </h2>
 
-                    <p className="mx-auto mt-8 max-w-xl text-sm font-normal leading-6 text-white/55">
+                    <p className="mx-auto mt-8 max-w-xl text-sm font-normal leading-6 text-foreground/55">
                         Tell us a bit about your practice and we'll reach out to set up a
                         walkthrough.
                     </p>
@@ -96,7 +96,7 @@ export const BookDemoForm = () => {
 
                 {/* Form */}
 
-                <Card className="mx-auto mt-10 max-w-135 rounded-3xl md:rounded-[32px] border border-white/10 bg-card">
+                <Card className="mx-auto mt-10 max-w-135 rounded-3xl md:rounded-[32px] border border-foreground/10 bg-card">
                     <CardContent className="p-4 md:p-10">
                         <form onSubmit={form.handleSubmit(onSubmit, onInvalid)}>
                             <FieldGroup>
@@ -107,7 +107,7 @@ export const BookDemoForm = () => {
                                         control={form.control}
                                         render={({ field, fieldState }) => (
                                             <Field data-invalid={fieldState.invalid}>
-                                                <FieldLabel className="mb-3 text-sm font-semibold text-white">
+                                                <FieldLabel className="mb-3 text-sm font-semibold text-foreground">
                                                     {item.label}
                                                 </FieldLabel>
 
@@ -119,7 +119,7 @@ export const BookDemoForm = () => {
                                                     autoComplete="off"
                                                     aria-invalid={fieldState.invalid}
                                                     disabled={isSubmitting}
-                                                    className="h-10 md:h-12 rounded-xl border-border bg-transparent px-4 text-xs md:text-base text-white shadow-none placeholder:text-[#8096A4] focus-visible:ring-1 disabled:cursor-not-allowed disabled:opacity-60"
+                                                    className="h-10 md:h-12 rounded-xl border-border bg-transparent px-4 text-xs md:text-base text-foreground shadow-none placeholder:text-muted-foreground focus-visible:ring-1 disabled:cursor-not-allowed disabled:opacity-60"
                                                 />
 
                                                 {fieldState.error && (
@@ -135,7 +135,7 @@ export const BookDemoForm = () => {
                                 type="submit"
                                 disabled={
                                     isSubmitting}
-                                className="mt-8 h-10 md:h-14 w-full rounded-2xl md:rounded-full bg-[#5750E5] text-sm md:text-base font-semibold text-white transition-all duration-300 hover:bg-[#5750E5]/90 disabled:cursor-not-allowed disabled:opacity-70"
+                                className="mt-8 h-10 md:h-14 w-full rounded-2xl md:rounded-full bg-brand text-sm md:text-base font-semibold text-white transition-all duration-300 hover:bg-brand/90 disabled:cursor-not-allowed disabled:opacity-70"
                             >
                                 {isSubmitting ? (
                                     <>
@@ -147,7 +147,7 @@ export const BookDemoForm = () => {
                                 )}
                             </Button>
 
-                            <p className="mt-5 text-center text-xs leading-6 text-[#8A99A5]">
+                            <p className="mt-5 text-center text-xs leading-6 text-muted-foreground">
                                 Form for internal review — wire up to your CRM or scheduling
                                 tool before this page goes live.
                             </p>

@@ -71,16 +71,16 @@ export const RevenueCalculator = () => {
             See The Impact
           </p>
 
-          <h2 className="mt-6 text-2xl font-extrabold text-white lg:text-4xl">
+          <h2 className="mt-6 text-2xl font-extrabold text-foreground lg:text-4xl">
             What are missed calls costing your practice?
           </h2>
 
-          <p className="mx-auto mt-8 max-w-xl text-sm font-normal leading-6 text-white/55">
+          <p className="mx-auto mt-8 max-w-xl text-sm font-normal leading-6 text-foreground/55">
             Answer four quick questions about your call volume and see what you&#39re leaving on the table every month.
           </p>
         </div>
 
-        <div className="mt-16 rounded-[28px] border border-white/10 bg-[#1A1928] p-4 md:p-10">
+        <div className="mt-16 rounded-[28px] border border-foreground/10 bg-surface p-4 md:p-10">
 
           <div className="grid gap-10 lg:grid-cols-2">
 
@@ -89,7 +89,7 @@ export const RevenueCalculator = () => {
             <div className="space-y-8">
 
               <div>
-                <label className="mb-3 block text-sm text-white/75">
+                <label className="mb-3 block text-sm text-foreground/75">
                   Average inbound calls per month
                 </label>
 
@@ -101,7 +101,7 @@ export const RevenueCalculator = () => {
                   }
                   step={10}
                   min={0}
-                  className="h-14 w-full rounded-xl border border-white/10 bg-[#2A2939] px-5 text-white outline-none"
+                  className="h-14 w-full rounded-xl border border-foreground/10 bg-surface-3 px-5 text-foreground outline-none"
                 />
               </div>
 
@@ -124,7 +124,7 @@ export const RevenueCalculator = () => {
               />
 
               <div>
-                <label className="mb-3 block text-sm text-white/75">
+                <label className="mb-3 block text-sm text-foreground/75">
                   Average first-visit value ($)
                 </label>
 
@@ -136,7 +136,7 @@ export const RevenueCalculator = () => {
                   }
                   min={0}
                   step={10}
-                  className="h-14 w-full rounded-xl border border-white/10 bg-[#2A2939] px-5 text-white outline-none"
+                  className="h-14 w-full rounded-xl border border-foreground/10 bg-surface-3 px-5 text-foreground outline-none"
                 />
               </div>
 
@@ -144,9 +144,9 @@ export const RevenueCalculator = () => {
 
             {/* RIGHT */}
 
-            <div className="rounded-3xl flex-1 bg-[#262766] p-3 md:p-7">
+            <div className="rounded-3xl flex-1 bg-[#e3e7ff] dark:bg-[#262766] p-3 md:p-7">
 
-              <p className="mb-8 text-xs uppercase tracking-[1.1px] text-white/45">
+              <p className="mb-8 text-xs uppercase tracking-[1.1px] text-foreground/45">
                 What this is costing you
               </p>
 
@@ -178,7 +178,7 @@ export const RevenueCalculator = () => {
               />
 
               <Link href="/pricing"
-                className="mt-10 flex max-sm:text-xs py-4 items-center justify-center gap-3 rounded-full bg-[#5750E5] font-semibold text-white transition hover:opacity-90"
+                className="mt-10 flex max-sm:text-xs py-4 items-center justify-center gap-3 rounded-full bg-brand font-semibold text-white transition hover:opacity-90"
               >
                 See How OnCall Recovers This
               </Link>
@@ -189,7 +189,7 @@ export const RevenueCalculator = () => {
 
         </div>
 
-        <p className="mx-auto mt-8 max-w-3xl lg:text-nowrap text-center text-sm text-white/35">
+        <p className="mx-auto mt-8 max-w-3xl lg:text-nowrap text-center text-sm text-foreground/35">
           Estimates based on industry benchmark call-handling rates.
           Actual results vary by practice. Reflects inbound call
           coverage only.

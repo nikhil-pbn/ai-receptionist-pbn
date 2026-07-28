@@ -1,4 +1,4 @@
-import { Footer, Header } from "@/components/common";
+import { Footer, Header, SmoothHashScroll, ThemeProvider } from "@/components/common";
 import { Toaster } from "@/components/ui";
 import { CeraPro } from "@/fonts/cera";
 import { cn } from "@/lib/utils";
@@ -99,9 +99,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={cn("dark", "h-full", "antialiased", CeraPro.className, "font-sans", geist.variable)}>
+    <html lang="en" suppressHydrationWarning className={cn("h-full", "antialiased", CeraPro.className, "font-sans", geist.variable)}>
       <body className="min-h-full flex flex-col">
         <Script
+          id="organization-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationSchema),
@@ -109,15 +110,24 @@ export default function RootLayout({
         />
 
         <Script
+          id="website-schema"
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(websiteSchema),
           }}
         />
-        <Header />
-        {children}
-        <Footer />
-        <Toaster richColors />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <SmoothHashScroll />
+          <Header />
+          {children}
+          <Footer />
+          <Toaster richColors />
+        </ThemeProvider>
       </body>
     </html>
   );

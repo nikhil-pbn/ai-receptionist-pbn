@@ -11,7 +11,7 @@ export const FAQSection = () => {
                         Questions
                     </span>
 
-                    <h2 className="mt-6 text-3xl font-extrabold text-white lg:text-4xl">
+                    <h2 className="mt-6 text-3xl font-extrabold text-foreground lg:text-4xl">
                         Your questions, answered
                     </h2>
                 </div>
@@ -23,16 +23,16 @@ export const FAQSection = () => {
                         <AccordionItem
                             key={item.value}
                             value={item.value}
-                            className="border-border border my-1 bg-[#1A1926] rounded-lg sm:rounded-[15px] px-3 py-2 sm:px-6.5 sm:py-4.5"
+                            className="border-border border my-1 bg-surface rounded-lg sm:rounded-[15px] px-3 py-2 sm:px-6.5 sm:py-4.5"
                         >
                             <AccordionTrigger className=" text-sm font-normal py-0">{item.question}</AccordionTrigger>
-                            <AccordionContent className="text-white/70">{item.answer}</AccordionContent>
+                            <AccordionContent className="text-foreground/70">{item.answer}</AccordionContent>
                         </AccordionItem>
                     ))}
                 </Accordion>
                 <Link
                     href="/faq"
-                    className="rounded-full border border-white/15 px-6 py-2 text-sm font-normal text-white/70 transition hover:border-border/80 hover:text-white"
+                    className="rounded-full border border-foreground/15 px-6 py-2 text-sm font-normal text-foreground/70 transition hover:border-border/80 hover:text-foreground"
                 >
                     View all FAQs
                 </Link>

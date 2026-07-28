@@ -10,7 +10,7 @@ export const WhyChooseUs = () => {
             Why Practices Choose Us
           </span>
 
-          <h2 className="mt-6 text-3xl font-extrabold text-white lg:text-4xl">
+          <h2 className="mt-6 text-3xl font-extrabold text-foreground lg:text-4xl">
             Why Practices Pick PbN AI Receptionist
           </h2>
         </div>

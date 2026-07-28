@@ -14,9 +14,9 @@ export const SuggestedPrompts = () => {
           {SUGGESTED_PROMPTS.map((prompt) => (
             <div
               key={prompt.id}
-              className="rounded-2xl border border-white/10  px-6 py-5 transition-all duration-300 hover:border-primary/40"
+              className="rounded-2xl border border-foreground/10  px-6 py-5 transition-all duration-300 hover:border-primary/40"
             >
-              <p className="text-sm font-medium leading-[1.1] text-white">
+              <p className="text-sm font-medium leading-[1.1] text-foreground">
                 {prompt.text}
               </p>
             </div>

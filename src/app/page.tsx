@@ -7,12 +7,13 @@ export default function Home() {
   return (
     <>
       <Script
+        id="home-faq-schema"
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: JSON.stringify(homeFaqSchema),
         }}
       />
-      <main className="flex pt-10 flex-col w-full items-center justify-between bg-[#161515]">
+      <main className="flex pt-10 flex-col w-full items-center justify-between bg-background">
         <HeroSection />
         <IntegrationStrip />
         <ProblemStats />

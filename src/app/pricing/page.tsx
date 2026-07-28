@@ -5,7 +5,7 @@ import { pricingFAQ, pricingFeatures, pricingTabs } from "@/constants/pricing";
 
 export default function PricingPage() {
   return (
-    <main className="flex pt-10 flex-col w-full items-center justify-between bg-[#161515]">
+    <main className="flex pt-10 flex-col w-full items-center justify-between bg-background">
       <HeroSection />
       <PricingFeatures {...pricingFeatures} />
       <PricingTabs {...pricingTabs} />

@@ -4,7 +4,7 @@ import { HeroSection, RecordedDemo, SuggestedPrompts, VideoLibrary } from "@/com
 
 export default function DemosPage() {
   return (
-    <main className="flex pt-10 flex-col w-full items-center justify-between bg-[#161515]">
+    <main className="flex pt-10 flex-col w-full items-center justify-between bg-background">
       <HeroSection />
       <LastCTA
         badge="Call Anytime — Live 24/7"

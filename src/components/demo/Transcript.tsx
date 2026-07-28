@@ -7,14 +7,14 @@ interface Props {
 
 export const Transcript = ({ transcript }: Props) => {
   return (
-    <div className="mt-5 h-90 overflow-y-auto rounded-3xl border border-white/10 bg-transparent p-8">
+    <div className="mt-5 h-90 overflow-y-auto rounded-3xl border border-foreground/10 bg-transparent p-8">
       <div className="space-y-3">
         {transcript.map((line, index) => (
           <p
             key={index}
             className="text-base leading-9 text-accent-foreground/50"
           >
-            <span className="font-bold text-white">
+            <span className="font-bold text-foreground">
               {line.speaker}:
             </span>{" "}
             {line.text}

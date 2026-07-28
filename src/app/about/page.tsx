@@ -3,7 +3,7 @@ import { LastCTA } from "@/components/common";
 
 export default function AboutPage() {
   return (
-    <main className="flex pt-10 flex-col w-full items-center justify-between bg-[#161515]">
+    <main className="flex pt-10 flex-col w-full items-center justify-between bg-background">
       <HeroSection />
       <AboutFeaturesSection />
       <LastCTA

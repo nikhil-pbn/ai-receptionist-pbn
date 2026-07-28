@@ -10,17 +10,17 @@ export const PricingFeatures = ({
   return (
     <section className="py-20">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="rounded-[28px] border border-primary/30 bg-[#17182A] p-8 md:p-12">
+        <div className="rounded-[28px] border border-primary/30 bg-surface-2 p-8 md:p-12">
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[1.1px] text-[#8B4DFF]">
               {badge}
             </p>
 
-            <h2 className="text-3xl font-extrabold text-white md:text-5xl">
+            <h2 className="text-3xl font-extrabold text-foreground md:text-5xl">
               {title}
             </h2>
 
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-white/60">
+            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-foreground/60">
               {description}
             </p>
           </div>
@@ -35,7 +35,7 @@ export const PricingFeatures = ({
                       className="mt-1 shrink-0 text-primary"
                     />
 
-                    <p className="text-lg leading-8 text-white">
+                    <p className="text-lg leading-8 text-foreground">
                       {item}
                     </p>
                   </div>

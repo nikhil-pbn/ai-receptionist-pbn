@@ -52,11 +52,11 @@ export const DemoAudioPlayer = ({
         }}
       />
 
-      <div className="rounded-3xl border border-white/10 bg-transparent p-5">
+      <div className="rounded-3xl border border-foreground/10 bg-transparent p-5">
         <div className="flex gap-5">
           <button
             onClick={toggle}
-            className="flex h-14 w-14 items-center justify-center rounded-full bg-transparent border border-border text-white"
+            className="flex h-14 w-14 items-center justify-center rounded-full bg-transparent border border-border text-foreground"
           >
             {playing ? (
               <Pause className="fill-current" />
@@ -66,15 +66,15 @@ export const DemoAudioPlayer = ({
           </button>
 
           <div className="flex-1">
-            <h4 className="font-bold text-white">
+            <h4 className="font-bold text-foreground">
               {title}
             </h4>
 
-            <p className="text-sm text-white/50">
+            <p className="text-sm text-foreground/50">
               {voice} · {duration}
             </p>
 
-            <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-white/10">
+            <div className="mt-3 h-1.5 overflow-hidden rounded-full bg-foreground/10">
               <div
                 className="h-full rounded-full bg-primary transition-all"
                 style={{

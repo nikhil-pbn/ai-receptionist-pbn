@@ -1,15 +1,15 @@
 import { footerLinks } from "@/constants";
-import Image from "next/image";
 import Link from "next/link";
+import { Logo } from "@/components/common/Logo";
 
 export function Footer() {
   return (
-    <footer className="border-t border-border bg-[#161515]">
+    <footer className="border-t border-border bg-background">
       <div className="mx-auto max-w-5xl lg:max-w-4xl 2xl:max-w-7xl px-6 py-4 sm:py-16 lg:px-8">
         <div className="flex max-lg:flex-wrap gap-12 items-start justify-between">
           {/* Brand */}
           <div className="space-y-6 max-md:w-full flex flex-col max-md:items-center">
-            <Image src="/assets/home/HeaderLogo.png" width={150} height={44} alt="Logo" />
+            <Logo />
 
             <p className="md:max-w-sm text-sm max-md:text-center leading-8 text-muted-foreground">
               The AI receptionist built into the practice performance platform

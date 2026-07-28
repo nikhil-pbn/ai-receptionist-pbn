@@ -11,7 +11,7 @@ export const HowItWorks = () => {
                         How It Works
                     </p>
 
-                    <h2 className="mt-6 text-2xl font-extrabold text-white lg:text-4xl">
+                    <h2 className="mt-6 text-2xl font-extrabold text-foreground lg:text-4xl">
                         Live in one click, not one project
                     </h2>
                 </div>

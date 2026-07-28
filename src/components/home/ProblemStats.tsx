@@ -13,11 +13,11 @@ export const ProblemStats = () => {
                         {problemStats.badge}
                     </p>
 
-                    <h2 className="mt-6 text-2xl font-extrabold text-white lg:text-4xl">
+                    <h2 className="mt-6 text-2xl font-extrabold text-foreground lg:text-4xl">
                         {problemStats.title}
                     </h2>
 
-                    <p className="mx-auto mt-8 max-w-xl text-sm font-normal leading-6 text-white/55">
+                    <p className="mx-auto mt-8 max-w-xl text-sm font-normal leading-6 text-foreground/55">
                         {problemStats.description}
                     </p>
                 </div>
