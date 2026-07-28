@@ -1,7 +1,7 @@
 
 import { Card } from "@/components/ui";
 import { ResumeIcon } from "@/icon";
-import { VideoScenario } from "@/types/demoPage";
+import { VideoScenario } from "@/types/demo";
 
 interface VideoCardProps {
     video: VideoScenario;

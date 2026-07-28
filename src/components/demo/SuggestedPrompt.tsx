@@ -1,4 +1,4 @@
-import { SUGGESTED_PROMPTS } from "@/constants/demoPage";
+import { SUGGESTED_PROMPTS } from "@/constants/demo";
 
 export const SuggestedPrompts = () => {
   return (

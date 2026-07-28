@@ -1,7 +1,14 @@
 import { LastCTA } from "@/components/common";
-import { FAQSection, FeaturesSection, HearAIR, HeroSection, HowItWorks, IntegrationStrip, PricingPreview, ProblemStats, RevenueCalculator, SeeItInAction, Testimonials, WhyChooseUs } from "@/components/home";
+import { FAQSection, FeaturesSection, HearAIR, HeroSection, HowItWorks, IntegrationStrip, PricingPreview, ProblemStats, SeeItInAction, Testimonials, WhyChooseUs } from "@/components/home";
 import { homeFaqSchema } from "@/schema/home";
+import dynamic from "next/dynamic";
 import Script from "next/script";
+
+// Below-the-fold interactive widget — code-split its client bundle while
+// keeping server rendering (SSR stays on for SEO/LCP).
+const RevenueCalculator = dynamic(() =>
+  import("@/components/home/RevenueCalculator").then((m) => m.RevenueCalculator)
+);
 
 export default function Home() {
   return (

@@ -1,4 +1,4 @@
-import { VIDEO_LIBRARY } from "@/constants/demoPage";
+import { VIDEO_LIBRARY } from "@/constants/demo";
 
 import { VideoCard } from "./VideoCard";
 
@@ -18,8 +18,8 @@ export const VideoLibrary = () => {
 
                     <p className="mx-auto mt-8 max-w-xl text-sm font-normal leading-6 text-foreground/55">
                         Each card is recreated from a real AIR call. Voice persona
-                        "Maya," fictional practice "Riverbend Family Dental,"
-                        approximately 30–60 seconds each.
+                        &ldquo;Maya,&rdquo; fictional practice &ldquo;Riverbend Family
+                        Dental,&rdquo; approximately 30–60 seconds each.
                     </p>
                 </div>
 
@@ -37,8 +37,8 @@ export const VideoLibrary = () => {
                 {/* Footer */}
 
                 <p className="mt-12 text-center text-sm text-foreground/40">
-                    Production spec for all six: voice persona "Maya,"
-                    fictional practice "Riverbend Family Dental", 30–60
+                    Production spec for all six: voice persona &ldquo;Maya,&rdquo;
+                    fictional practice &ldquo;Riverbend Family Dental&rdquo;, 30–60
                     seconds spoken, pacing slowed on phone numbers, codes,
                     dates and provider names, with no on-screen text markup
                     in AIR&apos;s spoken lines.

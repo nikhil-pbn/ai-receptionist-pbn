@@ -3,9 +3,9 @@
 import { ChevronDown, ChevronUp } from "lucide-react";
 import { useState } from "react";
 
-import { RECORDED_DEMO } from "@/constants/demoPage";
+import { RECORDED_DEMO } from "@/constants/demo";
 
-import { DemoAudioPlayer, Transcript } from "@/components/demoPage";
+import { DemoAudioPlayer, Transcript } from "@/components/demo";
 
 export const RecordedDemo = () => {
     const [open, setOpen] = useState(false);

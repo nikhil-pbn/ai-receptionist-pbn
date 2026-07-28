@@ -1,4 +1,10 @@
-import { BookDemoForm, FAQSection, HeroSection } from "@/components/faqPage";
+import { FAQSection, HeroSection } from "@/components/faq";
+import dynamic from "next/dynamic";
+
+// Below-the-fold form (client) — code-split its bundle, keep SSR for SEO.
+const BookDemoForm = dynamic(() =>
+  import("@/components/faq/BookDemoForm").then((m) => m.BookDemoForm)
+);
 
 
 export default function FAQPage() {

@@ -1,5 +1,4 @@
-import { DemoButton } from "@/components/common";
-import { heroSection } from "@/constants/demoPage";
+import { heroSection } from "@/constants/demo";
 import Link from "next/link";
 
 export const HeroSection = () => {

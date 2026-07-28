@@ -1,5 +1,5 @@
 import { DemoButton } from "@/components/common";
-import { heroSection } from "@/constants/faqPage";
+import { heroSection } from "@/constants/faq";
 import Link from "next/link";
 
 export const HeroSection = () => {

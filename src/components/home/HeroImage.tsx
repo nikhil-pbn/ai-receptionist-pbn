@@ -49,7 +49,7 @@ export const HeroImage = () => {
                     </div>
 
                     {/* Bottom Card */}
-                    <div className="mt-8 rounded-2xl bg-[rgba(87, 80, 229, 0.10)] border border-[rgba(255, 255, 255, 0.10)] px-6 py-5">
+                    <div className="mt-8 rounded-2xl bg-brand/10 border border-foreground/10 px-6 py-5">
                         <p className="text-base font-extrabold text-[#2f5fd0] dark:text-[#7ACCFB]">
                             1 in 3{" "}
                             <span className="text-[10px] font-normal text-muted-foreground">

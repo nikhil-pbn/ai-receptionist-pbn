@@ -5,7 +5,7 @@ import {
     AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import { FAQ_CATEGORIES } from "@/constants/faqPage";
+import { FAQ_CATEGORIES } from "@/constants/faq";
 
 export const FAQSection = () => {
     return (

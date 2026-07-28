@@ -1,4 +1,4 @@
-import { DemoFormField, FAQCategory } from "@/types/faqPage";
+import { DemoFormField, FAQCategory } from "@/types/faq";
 
 export const heroSection = {
     title: "Your questions, answered",

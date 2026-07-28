@@ -16,3 +16,4 @@ export * from "@/components/home/SeeItInAction";
 export * from "@/components/home/FeaturesSection";
 export * from "@/components/home/RevenueCalculator";
 export * from "@/components/home/RevenueCard";
+export * from "@/components/home/HeroImage";

@@ -1,4 +1,4 @@
-import { RecordedDemo, SuggestedPrompt, VideoScenario } from "@/types/demoPage";
+import { RecordedDemo, SuggestedPrompt, VideoScenario } from "@/types/demo";
 
 export const heroSection = {
     title: "See AIR In Action",

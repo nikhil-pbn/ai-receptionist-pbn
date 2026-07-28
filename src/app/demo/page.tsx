@@ -1,5 +1,11 @@
 import { LastCTA } from "@/components/common";
-import { HeroSection, RecordedDemo, SuggestedPrompts, VideoLibrary } from "@/components/demoPage";
+import { HeroSection, SuggestedPrompts, VideoLibrary } from "@/components/demo";
+import dynamic from "next/dynamic";
+
+// Below-the-fold interactive audio/transcript widget — code-split, SSR kept on.
+const RecordedDemo = dynamic(() =>
+  import("@/components/demo/RecordedDemo").then((m) => m.RecordedDemo)
+);
 
 
 export default function DemosPage() {

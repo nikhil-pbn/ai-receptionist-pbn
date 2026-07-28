@@ -1,6 +1,4 @@
 import Image from "next/image";
-
-import { DemoButton } from "@/components/common";
 import Link from "next/link";
 
 type CTASectionProps = {
@@ -28,7 +26,7 @@ export const LastCTA = ({
                 alt={heading}
                 width={253}
                 height={253}
-                priority
+                loading="lazy"
                 className="size-60"
               />
             </div>
