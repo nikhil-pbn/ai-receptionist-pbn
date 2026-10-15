@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     },
   ],
 
-  creator: "Practie by numbers",
+  creator: "Practice by numbers",
   publisher: "Practice by Numbers",
 
   icons: {
@@ -123,7 +123,7 @@ export default function RootLayout({
         <Script
           id="visitoriq-sdk"
           src="https://visitor-iq-two.vercel.app/sdk/v1.js"
-          data-consent="required"
+          data-consent="not-required"
           strategy="afterInteractive"
         />
         <ThemeProvider
