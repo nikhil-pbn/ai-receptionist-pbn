@@ -116,6 +116,16 @@ export default function RootLayout({
             __html: JSON.stringify(websiteSchema),
           }}
         />
+
+        <Script id="visitoriq-init" strategy="beforeInteractive">
+          {`window.visitoriq=window.visitoriq||function(){(visitoriq.q=visitoriq.q||[]).push(arguments)};`}
+        </Script>
+        <Script
+          id="visitoriq-sdk"
+          src="https://visitor-iq-two.vercel.app/sdk/v1.js"
+          data-consent="required"
+          strategy="afterInteractive"
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
